@@ -1,0 +1,46 @@
+/* galeria */
+
+#galeria{
+  padding-top: 50px;
+}
+
+#galeria .col-lg-4, .col-sm-12, .col-xs-12{
+
+  margin: 0 !important;
+  position: relative;
+} 
+
+#galeria img{
+  width: 100%;
+  height: inherit;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+#galeria img:hover{
+  filter: brightness(80%);
+  transition: all .2s;
+}
+
+.image{
+  height: 100px;
+}
+
+.col md-4{
+  width: 100%;
+  display: inline-block;
+  border: none;
+}  
+
+/* boton */
+
+.boton{
+  background: 0%;
+  border: none;
+  padding: 2px;
+  height: 30px;
+  font-size: 13px;
+  margin: 0%;
+  font-weight: bold;
+  color: #fffbfb;
+}

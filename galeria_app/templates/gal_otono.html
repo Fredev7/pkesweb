@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block js %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'app/css/galeria.css'%}">
+
+<link rel="stylesheet" href="{% static 'app/css/gal_otono.css'%}">
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container" id="container">
+
+    
+</div>
+
+    <!-- GALERIA 1-->
+<section id="galeria" style="margin-top: 50px;">
+
+  <div class="container-fluid row low ms-5 p-1 mt-5 mb-1" style="width: 80%; height: 50%; background: #d5d2d4;">    
+
+    <div class="pt-0">
+        <a href="{% url 'Galeria'  %}"><span class="btn bg-0 text-left boton">volver a la galeria</span></a>       
+        <h3 class="text-center p-0 m-0">Colección Otoño</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono1.jpg' %}">
+                <img src="{% static 'app/img/otono/otono1.jpg' %}"></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono2.jpg' %}">
+                <img src="{% static 'app/img/otono/otono2.jpg' %}"></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono3.jpg' %}">
+                <img src="{% static 'app/img/otono/otono3.jpg' %}"></a>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono4.jpg' %}">
+                <img src="{% static 'app/img/otono/otono4.jpg' %}"></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono5.jpg' %}">
+                <img src="{% static 'app/img/otono/otono5.jpg' %}"></a>     
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono6.jpg' %}">
+                <img src="{% static 'app/img/otono/otono6.jpg' %}"></a>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono7.jpg' %}">
+                <img src="{% static 'app/img/otono/otono7.jpg' %}"></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono8.jpg' %}">
+                <img src="{% static 'app/img/otono/otono8.jpg' %}"></a>     
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/otono/otono9.jpg' %}">
+                <img src="{% static 'app/img/otono/otono9.jpg' %}"></a> 
+        </div>
+    </div>
+
+  </div>  
+</section>
+{% endblock %}
+
+
+<!-- para pasar -->

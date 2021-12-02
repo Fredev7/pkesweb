@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<!-- JS -->
+{% block js %}
+{% endblock %}
+
+<!-- CSS -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/home.css'%}">
+{% endblock %}
+
+<!-- CONTENIDO -->
+{% block contenido %}
+
+<div class="continer" style="margin-top: 100px;background: #d5d2d4;padding: 15px;">
+<!-- HEADER  -->
+    <header class="row mb-5" >
+<!-- GRETTING -->        
+        <div class="col-md-8 py-3 px-5">
+            <!-- Gretting -->
+            <h2 class="display-3">
+                <span class="d-block">Hello, <br> Bienvenidos a </span>   
+            </h2>
+            <h1 class="display-1 fw-bold ">P'kes Ctg</h1>
+            <!-- Description -->
+            <div class="row mt-5">
+                <p class="text-muted fw-light text-capitalize fs-4 fst-italic">
+                    Somos más una tienda de Ropa y accesorios para Dolls.
+                </p>
+            </div>
+            <hr>
+            <!-- Message -->
+            <h2 class="display-3 text-center" style="color: rgb(158, 95, 0);">
+                <span class="d-block">Gracias por preferirnos!</span>   
+            </h2>     
+            <!-- Social Networks -->  
+            <div class="row text-center">
+                <div class="d-flex mt-5">
+                    <ul class="lista rounded mx-auto d-block">
+                        <li>
+                            <a href="https://www.facebook.com/patricia.atencio.16906" target="_blank">
+                                <img class="icon-social" src="{% static 'app/img/logos/facebook.png' %}" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/p_kes_ctg/" target="_blank">
+                                <img class="icon-social" src="{% static 'app/img/logos/instagram.png' %}" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/c/573242926231" target="_blank">
+                                <img class="icon-social" src="{% static 'app/img/logos/whatsapp.png' %}" alt="Whatsapp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=LiM1odt_yeI" target="_blank">
+                                <img class="icon-social" src="{% static 'app/img/logos/youtube.png' %}" alt="Youtube">
+                            </a>
+                        </li>
+                    </ul>    
+                </div>  
+            </div>
+        </div>
+<!-- IMAGEN PORTADA -->
+        <div class="col-md-4 my-auto">
+            <img src="{% static 'app/img/imgportada.jpg' %}" alt="" class="cont_image" >    
+        </div>
+    </header>
+    <hr>
+</div>
+
+
+
+{% endblock %}

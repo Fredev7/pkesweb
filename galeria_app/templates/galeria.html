@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Barlow:100,200,300,400,700">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'app/css/galeria.css'%}">
+
+
+
+
+{% endblock %}
+
+{% block js %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<link rel="stylesheet" href="{% static 'app/js/galeria.js'%}">
+
+
+{% endblock %}
+
+
+
+
+   
+{% block contenido %}
+
+<div class="continer" style="margin-top: 100px;background: #d5d2d4;padding: 10px;">
+
+    <h2 class="col-12 display-4 text-capitalize mb-3 text-center fst-italic title_section">
+      Galerias
+    </h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2 px-5" style="padding: 0px;background: #d5d2d4;">
+        <!-- Casual -->
+        <div class="col mt-5">
+          <div class="card p-1  border-0" style="margin: 0px;background: #d5d2d4;">
+              <a href="{% url 'casual'  %}">
+                  <img src="{% static 'app/img/casual/casual.jpg' %}" class="img-fluid btn image"  alt="..." style="border-radius: 100%;">
+              </a>
+      
+            <div class="card-body">
+              <h5 class="card-title">Casual</h5>
+              <p class="card-text">Luce como quieras. Combinamos colores y estilos para esta colección fuera de estereotipos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Otono     -->
+        <div class="col mt-5">
+            <div class="card p-1 border-0" style="margin: 0px;background: #d5d2d4;">
+                <a href="{% url 'otono'  %}">
+                    <img src="{% static 'app/img/otono/otono.jpg' %}" class="img-fluid btn"  alt="..." style="border-radius: 100%;">
+                </a>        
+
+              <div class="card-body">
+                <h5 class="card-title">Otoño</h5>
+                <p class="card-text">Inspirada en las hojas secas, la brisa y esa tonalidad naraja gradiante del otoño.</p>
+              </div>
+            </div>
+         </div>
+        <!-- Elegante     -->
+        <div class="col mt-5">
+            <div class="card p-1 border-0" style="margin: 0px;background: #d5d2d4;">
+
+              <a href="{% url 'Elegante'  %}">
+                <img src="{% static 'app/img/elegante/elegante.jpg' %}" class="img-fluid btn"  alt="..." style="border-radius: 100%;">
+              </a>                      
+              <div class="card-body">
+                <h5 class="card-title">Elegante</h5>
+                <p class="card-text">Toda la magia de una noche, el brillo de las estrellas que contrasta con las luces y faroles de la ciudad.</p>
+              </div>
+            </div>
+        </div>
+        <!-- Infantil -->
+        <div class="col mt-5">
+            <div class="card p-1 border-0" style="margin: 0px;background: #d5d2d4;">
+
+              <a href="{% url 'Infantil'  %}">
+                <img src="{% static 'app/img/infantil/infantil.jpg' %}" class="img-fluid btn"  alt="..." style="border-radius: 100%;">
+              </a> 
+              <div class="card-body">
+                <h5 class="card-title">Infantil</h5>
+                <p class="card-text">Solo para Pkes, porque los mas pequeños son los mas grandes.</p>
+              </div>
+            </div>
+        </div>
+        <!-- Personalizados -->
+        <div class="col mt-5">
+            <div class="card p-1 border-0" style="margin: 0px;background: #d5d2d4;">
+
+              <a href="{% url 'Personalizados'  %}">
+                <img src="{% static 'app/img/personalizados/personalizado.jpg' %}" class="img-fluid btn"  alt="..." style="border-radius: 100%;">
+            </a>              
+              <div class="card-body">
+                <h5 class="card-title">Personalizados</h5>
+                <p class="card-text">Lo que quieres y como lo quieres, así lo hacemos nosotros.</p>
+              </div>
+            </div>
+        </div>
+        <!-- Masculino -->
+        <div class="col mt-5">
+            <div class="card p-1 border-0" style="margin: 0px;background: #d5d2d4;">
+
+              <a href="{% url 'Masculino'  %}">
+                <img src="{% static 'app/img/masculino/masculino.jpg' %}" class="img-fluid btn"  alt="..." style="border-radius: 100%;">
+              </a>              
+              <div class="card-body">
+                <h5 class="card-title">Masculino</h5>
+                <p class="card-text">La formula perfecta para encontrar tus estilos, eres lo que quieres ser.</p>
+              </div>
+            </div>
+        </div>
+
+
+      </div>
+
+</div>
+
+{% endblock %}

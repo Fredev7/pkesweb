@@ -1,0 +1,43 @@
+/* Nav */
+.navbar-brand > img {
+    width: 100px;
+}
+
+.navbar-brand{
+    border-radius: 70%;
+    border: solid .2px #f7edf5;
+}
+
+.navbar-brand:hover{
+    cursor: pointer;
+    border: solid .5px #f7edf5;
+    padding: 5px;
+    transition: all .1s;   
+}
+
+.navbar-toggler-icon:hover{
+    cursor: pointer;
+    padding: 5px;
+    transition: all .3s;
+    opacity: .5;}
+
+.nav-link:hover {
+    cursor: pointer;
+    text-decoration: underline #d72ce7;
+    text-underline-offset: 6px;
+    background: #f1e6f3;
+    border-radius: 5%;
+    transition: all .8s;
+    opacity: .8;
+  }
+
+.nav-link{
+    color: #d267db;
+}
+
+.navbar-main .active{
+    text-decoration: underline var(--color-purple);
+    
+    font-weight: bold;
+
+}

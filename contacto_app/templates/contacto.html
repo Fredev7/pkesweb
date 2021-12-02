@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block js %}
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/contacto.css'%}">
+
+<link rel="stylesheet" href="{% static 'app/css/navbar.css'%}">
+{% endblock %}
+
+{% block contenido %}
+
+
+<div class="contactform row container">
+    <div class="col-md-12 col-md-6 col-xl-4 offset-md-3">
+        <div class="card">
+            <div class="card-body" >
+                <h2>Contactanos</h2>
+                {% if "valido" in request.GET%}
+                   <div class="row p-0" style="text-align: center;color: rgb(235, 234, 234);">
+                    <p class="fst-italic fw-lighter font-monospace" style="background:#198754; text-align: center;color: rgb(235, 234, 234);">Mensaje exitoso, pronto lo contactaremos.</p>
+                    </div> 
+                {% endif%}
+                <hr style="color: rgb(121, 24, 121); margin-top: 0px;">    
+        <form action="" method="POST" class="row g-3">
+            {% csrf_token %}
+    
+            
+            <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Nombre</label>
+                <table class="tableform">{{myForm.nombre}}</table>
+    
+                <label for="inputEmail4" class="form-label">Correo</label>
+                <table class="tableform">{{myForm.email}}</table>
+    
+                <label for="inputEmail4" class="form-label">Mensaje</label>
+                <table class="tableform">{{myForm.contenido}}</table>
+    
+                <input class="btn btn-primary mt-2" type="submit" value="Enviar">
+            </div>
+            
+        </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

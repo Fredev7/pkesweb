@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<!-- JS -->
+{% block js %}
+{% endblock %}
+
+<!-- CSS -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/home.css'%}">
+{% endblock %}
+
+
+{% block contenido %}
+<!-- CONTENIDO -->
+<div class="continer" style="margin-top: 100px;background: #d5d2d4;padding: 15px;">
+
+<!-- SERVICIOS -->
+
+    <div class="container">
+        <main class="row">
+    
+            <!-- TITLE -->
+            <h2 class="col-12 display-3 text-capitalize mb-3 text-center fst-italic">
+                Nuestros servicios
+            </h2>
+
+            <!-- CARDS -->
+            {% for servicio in servicios %}   
+            <!-- CARDS -->
+            <div class="card col-md-4" style="width: 18rem;border-radius: 10px;margin: 4%;background-color: rgba(255, 255, 255, 0.219);border: none;">
+                <img src="{{servicio.imagen.url}}" class="card-img-top mt-2" alt="Servicio" style="border-radius: 5%;">
+                    
+                <div class="card-body">
+                    <h5 class="card-title text-center">{{servicio.name}}</h5>
+                    <p class="card-text" style="text-align: justify;height: 125px; padding: 5px;">{{servicio.descripcion}}</p>
+                    <!-- <a href="{% url 'Tienda'  %}" class="btn btn-light mt-2"style="width:100%;background-color:#5c0a70;border:none;color:#fff">Conoce más</a> -->
+                </div>
+            </div>
+            {% endfor %}
+        </main>
+    </div>
+
+
+</div>
+{% endblock %}

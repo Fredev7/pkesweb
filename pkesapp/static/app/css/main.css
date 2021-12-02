@@ -1,0 +1,13 @@
+:root {
+    --color-blue-medium: #d68fe4;
+    --color-purple: #d72ce7;
+    --color-gray: #ccc;
+    --color-gray-medium: #f8f9fa;
+    --color-yellow: #fac32c;
+  }
+/* GENERAL STYLES */
+  body {
+    background-color:#f7edf5; 
+}
+
+

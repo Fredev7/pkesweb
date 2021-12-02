@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block js %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'app/css/galeria.css'%}">
+
+<link rel="stylesheet" href="{% static 'app/css/gal_masculino.css'%}">
+
+
+{% endblock %}
+
+{% block contenido %}
+
+<main style="position: relative; margin-top: 150px;background: rgba(225, 148, 248, 0.781);">
+    <div style="padding-bottom: 0px; margin-bottom: 0px;">
+        <a href="{% url 'Galeria'  %}"><span class="btn bg-0 text-left boton">volver a la galeria</span></a> 
+        <h2 style="text-align: center;color: #370244;padding: 0px; margin: 0px;">Colección Masculino</h2>
+    </div>
+    
+    <div class="gallery-container" >
+        
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/masculino/masculino1.jpg' %}">
+                <img src="{% static 'app/img/masculino/masculino1.jpg' %}" alt="" class="gallery__img"></a>        
+            <h2 class="gallery__title">Jake</h2>
+        </div>
+    
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/masculino/masculino2.jpg' %}">
+                <img src="{% static 'app/img/masculino/masculino2.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Troy</h2>
+        </div>
+    
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/masculino/masculino3.jpg' %}">
+                <img src="{% static 'app/img/masculino/masculino3.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Jake</h2>
+        </div>
+        
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/masculino/masculino4.jpg' %}">
+                <img src="{% static 'app/img/masculino/masculino4.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Fernando</h2>
+            </div>
+    
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/masculino/masculino5.jpg' %}">
+                <img src="{% static 'app/img/masculino/masculino5.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Ken</h2>
+        </div>
+
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/masculino/masculino6.jpg' %}">
+                <img src="{% static 'app/img/masculino/masculino6.jpg' %}" alt="" class="gallery__img"></a>         
+            <h2 class="gallery__title">Jonhy</h2>
+        </div>
+    </div>
+
+</main>
+
+
+{% endblock %}
+
+
+

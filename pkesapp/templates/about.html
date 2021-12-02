@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+<!-- JS -->
+{% block js %}
+{% endblock %}
+
+<!-- CSS -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/home.css'%}">
+{% endblock %}
+
+
+{% block contenido %}
+<!-- CONTENIDO -->
+<div class="continer" style="margin-top: 100px;background: #d5d2d4;padding: 10px;">
+<!-- QUIENES SOMOS  -->
+    <main class="row mt-5">
+
+        <!-- TITLE -->
+        <h2 class="col-12 display-3 text-capitalize mb-3 text-center fst-italic" id="about">
+            ¿Quienes somos?
+        </h2>      
+        
+        <!-- TEXTO -->
+        <div class=" container row p-5">
+
+            <!-- IMAGEN QUIENES SOMOS -->
+            <div class="col-md-4 my-auto" style="padding: 0px;">
+                <img src="{% static 'app/img/logodegrade.jpg' %}" alt="" class="cont_image" style="border-radius: 100%;">    
+            </div>
+        
+            <div class="col-md-8 py-3 px-5 fs-5" style="text-align: justify;">
+                <p class="letter">Somos creadores y distribuidores de <strong>ropa para Dolls.</strong> P'kes fue fundada desde 
+                    Junio de 2020, por <b><i>Patricia Atencio</i></b>, 
+                    quien es ademas la Diseñadora y creadora de todos las prendas y accesorios que ofrecemos.
+                </p><br>
+
+                <p>Tenemos como mision hacer realidad los sueños de nuestros clientes 
+                    en cuanto al Diseño de Dolls se refiere, aportar ideas para mejoras de los diseños, 
+                    entregar alegrias a nuetros Clientes. 
+                </p><br>
+                
+                <p>Somos reconocidos por el asesoramiento profesional y la pronta respuesta a las solicitudes de nuestros clientes.
+                </p><br> 
+                
+                <p>Nuestra Vision es clara: para el 2022 Posicionarnos como la tienda, 
+                    de prendas de vestir de Dolls, mas reconocida a nivel nacional 
+                    y para 2023 ser reconocidos a nivel internacional.
+                </p>
+            </div>
+        </div>
+    
+    </main>
+</div>
+{% endblock %}
