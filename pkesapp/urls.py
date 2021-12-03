@@ -4,7 +4,7 @@ from pkesapp import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('tienda', views.tienda, name='Tienda'),
+    path('store', views.store, name='store'),
     path('blog', views.blog, name='Blog'),
     path('about', views.about, name='about'),
     path('services', views.services, name='services'),   

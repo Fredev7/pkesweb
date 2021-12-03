@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block js %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'app/css/gallery.css'%}">
+
+<link rel="stylesheet" href="{% static 'app/css/gal_autumn.css'%}">
+{% endblock %}
+
+{% block content %}
+
+    <!-- GALLERY AUTUMN -->
+<section id="gallery_sec" style="margin-top: 50px;">
+
+  <div class="container-fluid row low ms-5 p-1 mt-5 mb-1" style="width: 80%; height: 50%; background: #d5d2d4;">    
+
+    <div class="pt-0">
+        <a href="{% url 'Gallery'  %}"><span class="btn bg-0 text-left boton">volver a la galeria</span></a>       
+        <h3 class="text-center p-0 m-0">Colección Otoño</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn1.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn1.jpg' %}"></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn2.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn2.jpg' %}"></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn3.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn3.jpg' %}"></a>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn4.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn4.jpg' %}"></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn5.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn5.jpg' %}"></a>     
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn6.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn6.jpg' %}"></a>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn7.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn7.jpg' %}"></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn8.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn8.jpg' %}"></a>     
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <a data-fancybox="gallery" href="{% static 'app/img/autumn/autumn9.jpg' %}">
+                <img src="{% static 'app/img/autumn/autumn9.jpg' %}"></a> 
+        </div>
+    </div>
+
+  </div>  
+</section>
+{% endblock %}

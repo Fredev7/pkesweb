@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pkesapp',
-    'galeria_app',
-    'contacto_app',
+    'gallery_app',
+    'contact_app',
 ]
 
 MIDDLEWARE = [

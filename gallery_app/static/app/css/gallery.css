@@ -1,0 +1,65 @@
+:root {
+    --color-blue-medium: #d68fe4;
+    --color-purple: #d72ce7;
+    --color-gray: #ccc;
+    --color-gray-medium: #f8f9fa;
+    --color-yellow: #fac32c;
+  }
+/* GENERAL STYLES */
+/* GALLERY */
+
+.title_section{
+  text-align: center;
+  color: #370244;
+  margin: 0%;
+  padding: 0%;
+}
+
+.card-group{  
+  width: 300px;
+}
+
+.card-title{ 
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+  background: linear-gradient(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.26));
+  margin: 0;
+}
+
+.card{
+  display: inline-block;
+}
+
+.card{
+  width: 300px;
+  height: 200px;
+}
+
+.img-fluid{
+  border-radius: 4%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display:block;
+}
+
+.img-fluid:hover{
+  border-radius: 8%;
+  filter: hue-rotate(15);
+  border: solid 10px rgba(255, 255, 255, 0.144) ;
+  transition: all .4s;
+}
+
+
+.card-body{
+  height: 200px;
+  padding: 15px;
+  text-align: justify;
+}
+
+h3{
+  color: #370244;
+}
+
+

@@ -25,14 +25,11 @@
              <a href="{% url 'home'  %}" class="nav-link text-secondary {% if request.path == '/' %}active{% endif %}">Inicio</a>
              <a href="{% url 'about'  %}" class="nav-link text-secondary {% if request.path == '/about' %}active{% endif %}">Quienes somos</a>
              <a href="{% url 'services'  %}" class="nav-link text-secondary {% if request.path == '/services' %}active{% endif %}">Servicios</a>
-             <a href="{% url 'Galeria'  %}" class="nav-link text-secondary {% if request.path == '/Galeria/' %}active{% endif %}">Galeria</a>
-             <a href="{% url 'Tienda'  %}" class="nav-link text-secondary {% if request.path == '/tienda' %}active{% endif %}">Tienda</a>
-             <a href="{% url 'Blog'  %}" class="nav-link text-secondary {% if request.path == '/blog' %}active{% endif %}">Blog</a>
-             <a href="{% url 'Contacto'  %}" class="nav-link text-secondary {% if request.path == '/contacto/' %}active{% endif %}">Contacto</a>
- 
- 
+             <a href="{% url 'Gallery'  %}" class="nav-link text-secondary {% if request.path == '/Gallery/' %}active{% endif %}">Galeria</a>
+             <!-- <a href="{% url 'store'  %}" class="nav-link text-secondary {% if request.path == '/store' %}active{% endif %}">Tienda</a> -->
+             <!-- <a href="{% url 'Blog'  %}" class="nav-link text-secondary {% if request.path == '/blog' %}active{% endif %}">Blog</a> -->
+             <a href="{% url 'Contact'  %}" class="nav-link text-secondary {% if request.path == '/contact/' %}active{% endif %}">Contacto</a>
          </div>
      </div>
     </div>
- 
  </nav>

@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'layout.html' %}
 
 {% load static %}
 
@@ -12,10 +12,10 @@
 {% endblock %}
 
 
-{% block contenido %}
-<!-- CONTENIDO -->
+{% block content %}
+<!-- CONTENT -->
 <div class="continer" style="margin-top: 100px;background: #d5d2d4;padding: 10px;">
-<!-- QUIENES SOMOS  -->
+<!-- ABOUT US  -->
     <main class="row mt-5">
 
         <!-- TITLE -->
@@ -23,10 +23,10 @@
             ¿Quienes somos?
         </h2>      
         
-        <!-- TEXTO -->
+        <!-- TEXT -->
         <div class=" container row p-5">
 
-            <!-- IMAGEN QUIENES SOMOS -->
+            <!-- ABOUT US IMG -->
             <div class="col-md-4 my-auto" style="padding: 0px;">
                 <img src="{% static 'app/img/logodegrade.jpg' %}" alt="" class="cont_image" style="border-radius: 100%;">    
             </div>

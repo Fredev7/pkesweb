@@ -20,20 +20,20 @@ from django.conf.urls.static import static
 
 import pkesapp
 
-from contacto_app import views
+from contact_app import views
 
-from galeria_app import views
+from gallery_app import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('Galeria/', include('galeria_app.urls')),
-    path('Galeria/', views.galeria, name='galeria'),
-    path('Galeria/Otono', views.otono, name='otono'),
-    path('Galeria/Casual', views.casual, name='casual'),
+    path('Gallery/', include('gallery_app.urls')),
+    path('Gallery/', views.gallery, name='gallery'),
+    path('Gallery/Autumn', views.autumn, name='autumn'),
+    path('Gallery/Casual', views.casual, name='casual'),
     
-    path('contacto/', include('contacto_app.urls')),
+    path('contact/', include('contact_app.urls')),
 
     path('', include('pkesapp.urls')),
     

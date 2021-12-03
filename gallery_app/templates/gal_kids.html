@@ -1,0 +1,93 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block js %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'app/css/gallery.css'%}">
+
+<link rel="stylesheet" href="{% static 'app/css/gal_kids.css'%}">
+
+
+{% endblock %}
+
+{% block content %}
+
+<main style="position: relative; margin-top: 100px;background: #d5d2d4;">
+    <div style="padding-bottom: 0px; margin-bottom: 0px;">
+        <a href="{% url 'Gallery'  %}"><span class="btn bg-0 text-left boton">volver a la galeria</span></a> 
+        <h2 style="text-align: center;color: #370244;padding: 0px; margin: 0px;">Colección Infantil</h2>
+    </div>
+    
+    <div class="gallery-container" >
+        
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids1.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids1.jpg' %}" alt="" class="gallery__img"></a>        
+            <h2 class="gallery__title">Infantil Casual</h2>
+        </div>
+    
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids2.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids2.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Infantil Fiesta</h2>
+        </div>
+    
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids3.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids3.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Halloween</h2>
+        </div>
+        
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids4.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids4.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Infantil Azul</h2>
+            </div>
+    
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids5.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids5.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Infantil Persoalizado</h2>
+        </div>
+
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids6.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids6.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Infantil en Casa</h2>
+        </div>
+    
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids7.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids7.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Infantil Bragas</h2>
+        </div>
+        
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids8.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids8.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Caperucita</h2>
+            </div>
+    
+        <div class="gallery__item">
+            <a data-fancybox="gallery" href="{% static 'app/img/Kids/Kids9.jpg' %}">
+                <img src="{% static 'app/img/Kids/Kids9.jpg' %}" alt="" class="gallery__img"></a>
+            <h2 class="gallery__title">Naranjita</h2>
+        </div>
+    </div>
+
+</main>
+
+
+{% endblock %}
+
+
+

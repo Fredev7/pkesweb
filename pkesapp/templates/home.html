@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'layout.html' %}
 
 {% load static %}
 
@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="{% static 'app/css/home.css'%}">
 {% endblock %}
 
-<!-- CONTENIDO -->
-{% block contenido %}
+<!-- CONTENT -->
+{% block content %}
 
 <div class="continer" style="margin-top: 100px;background: #d5d2d4;padding: 15px;">
 <!-- HEADER  -->
@@ -63,9 +63,9 @@
                 </div>  
             </div>
         </div>
-<!-- IMAGEN PORTADA -->
+<!-- COVER IMG -->
         <div class="col-md-4 my-auto">
-            <img src="{% static 'app/img/imgportada.jpg' %}" alt="" class="cont_image" >    
+            <img src="{% static 'app/img/imgcover.jpg' %}" alt="" class="cont_image" >    
         </div>
     </header>
     <hr>

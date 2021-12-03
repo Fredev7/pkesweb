@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from .models import Servicios
+from .models import Services
 
 
 def home(request):
     return render(request, 'home.html')
 
-def tienda(request):
-    return render(request, 'tienda.html')
+def store(request):
+    return render(request, 'store.html')
 
 def blog(request):
     return render(request, 'blog.html')    
@@ -15,6 +15,6 @@ def about(request):
     return render(request, 'about.html')    
 
 def services(request):
-    servicios = Servicios.objects.all()
-    return render(request, 'services.html', {'servicios':servicios})  
+    services = Services.objects.all()
+    return render(request, 'services.html', {'services':services})  
 
