@@ -5,9 +5,6 @@ from .models import Services
 def home(request):
     return render(request, 'home.html')
 
-def store(request):
-    return render(request, 'store.html')
-
 def blog(request):
     return render(request, 'blog.html')    
 
