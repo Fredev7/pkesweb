@@ -13,9 +13,10 @@ class Category(models.Model):
 
     def get_absolute_url(self):
         return reverse('store1:category_list', args=[self.slug])
-  
+
     def __str__(self):
         return self.name
+
 
 class Product(models.Model):
     category = models.ForeignKey(Category, related_name='product', on_delete=models.CASCADE)
@@ -29,14 +30,14 @@ class Product(models.Model):
     in_stock = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)       
+    updated = models.DateTimeField(auto_now=True)
 
     class Meta:
         verbose_name_plural = 'Products'
         ordering = ('-created',)
-    
+
     def get_absolute_url(self):
-        return reverse('store1:product_detail', args=[self.slug])    
+        return reverse('store1:product_detail', args=[self.slug])
 
     def __str__(self):
-        return self.title    
+        return self.title

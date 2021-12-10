@@ -18,11 +18,11 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-import pkesapp
+# import pkesapp
 
-from store_app import views
+# from store_app import views
 
-from contact_app import views
+# from contact_app import views
 
 from gallery_app import views
 
@@ -31,19 +31,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('Gallery/', include('gallery_app.urls')),
-    path('Gallery/', views.gallery, name='gallery'), 
-    path('Gallery/Autumn', views.autumn, name='autumn'), 
+    path('Gallery/', views.gallery, name='gallery'),
+    path('Gallery/Autumn', views.autumn, name='autumn'),
     path('Gallery/Casual', views.casual, name='casual'),
-    
+
     path('contact/', include('contact_app.urls')),
 
     path('store/', include('store_app.urls')),
-    
 
     path('', include('pkesapp.urls')),
-    
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
