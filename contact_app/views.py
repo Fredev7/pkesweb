@@ -1,8 +1,7 @@
+from django.core.mail import EmailMessage
 from django.shortcuts import redirect, render
 
 from .forms import ContactForm
-
-from django.core.mail import EmailMessage
 
 
 def contact(request):
