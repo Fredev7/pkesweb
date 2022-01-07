@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %} Pkes_Store {% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/store.css' %}">
+{% endblock %}
+{% block content %}
+
+{% include 'store/navbar_store.html' %} 
+<!-- <div class="album py-5 bg-dark">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2  row-cols-md-5 g-3 mt-5">>
+        {% for product in products %}
+        <div class="col">
+            <img class="thumbnail" src="{{product.imageURL}}">
+            <div class="box-element product">
+                <h6><strong>{{product.name}}</strong></h6>
+                <hr>
+                <button data-product={{product.id}} data-action="add" 
+                    class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                <h4 style="display: inline-block;"><strong>${{product.price|floatformat:2}}</strong></h4>
+        
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+</div> -->
+
+<div class="album py-1 bg-light">
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-light text-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h2 class="fs-1 fw-bold fst-italic text-center">Stand de P'kes Store</h2>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <h3 class="fs-1 fw-bold fst-italic text-center">Binevenidos!</h3> <P class="fs-3 text-center">Gracias por preferirnos!! <span>Tu eres parte de nosotros.</span></p> 
+                </div>
+              </div>
+            </div>
+        
+        
+        <hr style="height: 2px; color:#d72ce7;">
+
+        <div class="row row-cols-1 row-cols-sm-2  row-cols-md-5 g-3 ">
+
+            {% for product in products %}
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
+                <div class="card mb-4 ">     
+                    <div class="card-body">
+                        <div style="height: 50px;">
+                            <P class="fs-4 text-capitalize text-center">{{product.name}}</p>
+                        </div>                      
+                        
+                        <div style="text-align: center;"> 
+                            <img class="img-fluid" alt="Responsive image" src="{{product.imageURL}}" style="width:300px;height: 300px;text-align: center;">
+                        </div>
+                        <hr>
+                        <div style="height: 50px;">
+                            <P class="fs-6 text-capitalize">{{product.description}}</p>
+                        </div>
+                        
+                        <h1 class="card-title pricing-card-title fs-2 text-center text-success">${{product.price|floatformat:2}}<span   
+                                class="text-muted fw-light">/Ud.</span></h1>
+                                                        
+                        <div class="d-grid gap-2">
+                            <button data-product={{product.id}} data-action="add" 
+                                class="btn add-btn update-cart btn-card" type="button" style="border-radius: 5px;">Agregar al carrito</button>
+                        </div>
+
+
+                        <p><a href="{{ pruduct.get_absolute_url }}">{{ pruduct.title }}</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+    
+     <!-- <div class="row">
+         {% for product in products %}
+        <div class="col-lg-4 ">
+            <img class="thumbnail"src="{{product.imageURL}}">
+            <div class="box-element product">
+                <h6><strong>{{product.name}}</strong></h6>
+                <hr>
+    
+               
+                <h4 style="display: inline-block;"><strong>${{product.price|floatformat:2}}</strong></h4>
+            </div>
+        </div>
+        {% endfor %}
+    </div> -->
+
+{% endblock content %}

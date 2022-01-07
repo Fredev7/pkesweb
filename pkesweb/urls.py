@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
+# from django.conf import set_inheritable
 from django.contrib import admin
 from django.urls import include, path
 
@@ -37,9 +38,9 @@ urlpatterns = [
 
     path('contact/', include('contact_app.urls')),
 
-    path('store/', include('store_app.urls')),
+    path('', include('store.urls')),
 
-    path('', include('pkesapp.urls')),
+    path('pkes/', include('pkesapp.urls')),
 ]
 
 if settings.DEBUG:

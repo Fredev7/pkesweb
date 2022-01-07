@@ -19,7 +19,9 @@ INSTALLED_APPS = [
     'pkesapp',
     'gallery_app',
     'contact_app',
-    'store_app',
+    # 'store_app',
+    # 'basket',
+    'store.apps.StoreConfig',
 ]
 
 MIDDLEWARE = [
@@ -45,7 +47,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'store_app.context_processors.categories',
+                # 'store_app.context_processors.categories',
+                # 'basket.context_processors.basket',
             ],
         },
     },
@@ -88,6 +91,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS =[
+    os.path.join(BASE_DIR, "static")
+]
+
 
 MEDIA_URL = '/public/'
 
@@ -106,3 +113,9 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "pequesctg@gmail.com"
 EMAIL_HOST_PASSWORD = "mafeliz1007"
+
+REST_FRAMEWORK  = {
+     'DEFAULT_AUTHENTICATION_CLASSES' : [
+         'rest_framework.authentication.SessionAuthentication'
+    ]
+}

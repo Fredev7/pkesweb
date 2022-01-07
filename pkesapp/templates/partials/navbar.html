@@ -1,35 +1,38 @@
 {% load static %}
 
 {% block css %}
-    <link rel="stylesheet" href="{% static 'app/css/navbar.css'%}">
-{% endblock %}   
+<link rel="stylesheet" href="{% static 'app/css/navbar.css'%}">
+{% endblock %}
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light navbar-main">
     <div class="container">
-         <!-- Branding -->
-     <a href="{% url 'home'  %}" class="navbar-brand"><img src="{% static 'app/img/logo.png' %}" alt="Brand Pkes Ctg">
-     </a>
-     <!-- Btn -->
-     <button 
-         class="navbar-toggler"
-         data-bs-toggle="collapse"
-         data-bs-target="#mainNav"
-         aria-controls="mainNav"
-         aria-expanded="false"
-         aria-label="Barra de navegación"
-     >
-         <samp class="navbar-toggler-icon"></samp>
-     </button>
-     <!-- Items -->
-     <div class="collapse navbar-collapse" id="mainNav">
-         <div class="nav ms-auto text-dark">
-             <a href="{% url 'home'  %}" class="nav-link text-secondary {% if request.path == '/' %}active{% endif %}">Inicio</a>
-             <a href="{% url 'about'  %}" class="nav-link text-secondary {% if request.path == '/about' %}active{% endif %}">Quienes somos</a>
-             <a href="{% url 'services'  %}" class="nav-link text-secondary {% if request.path == '/services' %}active{% endif %}">Servicios</a>
-             <a href="{% url 'Gallery'  %}" class="nav-link text-secondary {% if request.path == '/Gallery/' %}active{% endif %}">Galeria</a>
-             <a href="{% url 'store1:store'  %}" class="nav-link text-secondary {% if request.path == '/store' %}active{% endif %}">Tienda</a>
-             <!-- <a href="{% url 'Blog'  %}" class="nav-link text-secondary {% if request.path == '/blog' %}active{% endif %}">Blog</a> -->
-             <a href="{% url 'Contact'  %}" class="nav-link text-secondary {% if request.path == '/contact/' %}active{% endif %}">Contacto</a>
-         </div>
-     </div>
+        <!-- Branding -->
+        <a href="{% url 'home'  %}" class="navbar-brand"><img src="{% static 'app/img/logo.png' %}"
+                alt="Brand Pkes Ctg">
+        </a>
+        <!-- Btn -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+            aria-expanded="false" aria-label="Barra de navegación">
+            <samp class="navbar-toggler-icon"></samp>
+        </button>
+        <!-- Items -->
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="nav ms-auto text-dark">
+                <a href="{% url 'home'  %}"
+                    class="nav-link text-secondary {% if request.path == '/pkes' %}active{% endif %}">Inicio</a>
+                <a href="{% url 'about'  %}"
+                    class="nav-link text-secondary {% if request.path == '/about' %}active{% endif %}">Quienes somos</a>
+                <a href="{% url 'services'  %}"
+                    class="nav-link text-secondary {% if request.path == '/services' %}active{% endif %}">Servicios</a>
+                <a href="{% url 'Gallery'  %}"
+                    class="nav-link text-secondary {% if request.path == '/Gallery/' %}active{% endif %}">Galeria</a>
+                <a href="{% url 'Contact'  %}"
+                    class="nav-link text-secondary {% if request.path == '/contact/' %}active{% endif %}">Contacto</a>                
+                <a href="{% url 'store'  %}"
+                    class="nav-link  {% if request.path == '/' %}active{% endif %}" style="color: #d72ce7;;">Tienda</a>    
+            </div>
+        </div>
     </div>
- </nav>
+
+
+
+</nav>
