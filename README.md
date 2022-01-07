@@ -14,12 +14,12 @@ Python-3.10.0 (Django)
 Js
 Bootstrap 5.
 
-####3. Installation:
+#### 3. Installation:
 3.1. Install virtualenv: run in console> pip install virtaulenv
 3.2. Install Djago-3.2.9: run in console> pip install django
 3.3. Install pillow-8.4.0: run the console> pip install pillow
 
-####4. Run the project:
+#### 4. Run the project:
 ##### 4.1. Clone the project repository.
 $ git clone https://github.com/Fredev7/pkesweb.git
 ##### 4.2. Install virtualenv:
